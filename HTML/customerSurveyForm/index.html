@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body{
+            background-color: rgba(13,153,232,255);
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Customer Survey Form</h1></div>
+    <div class="form">
+        <form  id="surveyForm">
+            <label for="">First Name</label>
+            <input type="text" id="firstName" required> <br><br>
+
+            <label for="">Last Name</label>
+            <input type="text" id="lastName" required> <br><br>
+
+            <label for="">DOB</label>
+            <input type="date" id="dob" required> <br><br>
+
+            <label for="">Country</label>
+            <input type="text" id="country" required> <br><br>
+
+            <label for="gd" >Gender</label> Male
+            <input type="radio" id="gd" name="gender" value="male" required> Female
+            <input type="radio" id="gd" name="gender" value="female" required> <br><br>
+
+            <label for="">Profession</label>
+            <input type="text" id="profession" required> <br><br>
+
+            <label for="">Email</label>
+            <input type="email" id="email" required> <br><br>
+
+            <label for="">Mobile</label>
+            <input type="tel" id="mobile" required> <br><br>
+
+            <div class="button_row">
+                <button type="button" id="submitBtn" onclick="submitForm()">Submit</button>
+                <button type="button" id="resetBtn" onclick="resetForm()">Reset</button>
+            </div>
+            
+
+        </form>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+
+</html>
